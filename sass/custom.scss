@@ -1,0 +1,136 @@
+//  Colors
+
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$desaturated-dark-blue: hsl(214, 17%, 51%);
+$grayish-blue: hsl(212, 23%, 69%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+$font-base: 'Manrope', sans-serif;   //Weights: 500, 700
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $light-grayish-blue;
+    font-family: $font-base;
+    // min-height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.componente-principal {
+    width: 20.4375rem;
+    margin-top: 4.625rem;
+    border-radius: 0.5625rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    box-shadow: 0px 20px 15px #dce6f0;
+}
+
+.imagen {
+    background-color: white;
+    // display: flex; 
+    width: 20.4375rem; 
+    height: 12.5rem;  
+    overflow: hidden;
+    position: relative;
+
+    .imagen-principal {
+        background-color: white;
+        background-image: url('../images/drawers.jpg');
+        background-size: contain;
+        background-blend-mode:multiply;
+        opacity: 0.93;
+
+        width: 20.4375rem;
+        height: 16.5rem;
+        
+        position: absolute;
+        top: -17px;
+    }
+}
+
+.info {
+    background-color: white;
+    padding: 2.25rem 2rem 1.1575rem 2rem;
+    color: $very-dark-grayish-blue;
+
+    .title {
+        font-size: 1.03125rem;
+        font-weight: 700;
+        line-height: 1.45;
+        padding-bottom: 0.8125rem;
+    }
+
+    .descripcion {
+        font-size: 0.8125rem;
+        color: $desaturated-dark-blue;
+        font-weight: 400;
+        line-height: 1.53;
+        letter-spacing: 0.01rem;
+        padding-bottom: 1.875rem;
+    }
+
+    .autor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .autor-info {
+            margin-left: -2.9rem;
+            font-weight: bold;
+            font-size: 0.8125rem;
+            line-height: 1.56;
+            letter-spacing: 0.01rem;
+
+            span {
+                font-weight: 400;
+                color: $grayish-blue;
+                font-size: 0.75rem;
+                letter-spacing: 0.05rem;
+            }
+        }
+
+        .btn-compartir {
+            background: url('../images/icon-share.svg');
+            background-repeat: no-repeat;
+            background-position-x: 50%;
+            background-position-y: 50%;
+            background-color: $light-grayish-blue;
+
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+    }
+}
+
+
+
+
+
+// Frontend Mentor Styles
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
