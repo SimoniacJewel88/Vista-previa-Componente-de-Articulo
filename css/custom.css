@@ -96,7 +96,51 @@ body {
   height: 32px;
   border-radius: 50%;
 }
+@media (min-width: 768px) {
+  .componente-principal {
+    display: flex;
+    width: 45.625rem;
+    height: 17.5rem;
+    margin-top: 16.25rem;
+    border-radius: 0.625rem;
+  }
 
+  .imagen {
+    width: 17.8125rem;
+    height: 17.5rem;
+    overflow: hidden;
+    position: relative;
+  }
+  .imagen .imagen-principal {
+    width: 17.8125rem;
+    height: 17.5rem;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+  }
+
+  .info {
+    width: 27.8125rem;
+    height: 17.5rem;
+    padding: 2rem 2.5rem 2rem 2.5rem;
+  }
+  .info .title {
+    font-size: 1.25rem;
+    line-height: 1.42;
+    letter-spacing: 0.019rem;
+    padding-bottom: 0.8125rem;
+  }
+  .info .descripcion {
+    padding-bottom: 1.1875rem;
+  }
+  .info .autor .autor-info {
+    margin-left: -8.9rem;
+  }
+  .info .autor .btn-compartir {
+    background-position-x: 55%;
+    background-position-y: 45%;
+  }
+}
 .attribution {
   font-size: 12px;
   text-align: center;
