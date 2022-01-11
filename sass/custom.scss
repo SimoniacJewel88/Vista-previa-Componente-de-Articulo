@@ -85,6 +85,66 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+
+        .compartir {
+            background-color: $very-dark-grayish-blue;
+            height: 4rem;
+            width: 20.4375rem;
+            position: absolute;  
+            top: -4px;
+            left: -2rem;
+            opacity: 0;
+
+            .enlaces {
+                margin-left: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                margin-top: 1rem;
+                list-style: none;
+                
+                .enlace {
+                    margin-right: 0.5rem;
+                    font-size: 0.8125rem;
+
+                    .facebook {
+                        background-image: url('../images/icon-facebook.svg');
+                        background-repeat: no-repeat;
+                        margin-left: 2.5rem;
+                        cursor: pointer;
+                    }
+                    .twitter {
+                        background-image: url('../images/icon-twitter.svg');
+                        background-repeat: no-repeat;
+                        margin-left: 0.5rem;
+                        margin-top: 2px;
+                        cursor: pointer;
+                    }
+                    .pinter {
+                        background-image: url('../images/icon-pinterest.svg');   
+                        background-repeat: no-repeat; 
+                        margin-left: 0.5rem;
+                        cursor: pointer;
+
+                    }
+        
+                    a {
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        text-decoration: none;
+                        color: $grayish-blue;
+                        letter-spacing: 0.2rem;
+                        
+                    }
+                }
+                
+            }
+
+        }
+        .activo {
+            opacity: 1;
+        }
 
         .avatar {
             width: 40px;
@@ -117,11 +177,8 @@ body {
             width: 32px;
             height: 32px;
             border-radius: 50%;
+            position: relative;
         }
-    }
-
-    .compartir {
-        
     }
 }
 
@@ -175,6 +232,29 @@ body {
             .btn-compartir {
                 background-position-x: 55%;
                 background-position-y: 45%;
+            }
+            .compartir {
+                height: 3.475rem;
+                width: 15.5rem;  
+                border-radius: 0.625rem;
+                top: -5rem;
+                left: 9rem;
+                opacity: 0;  
+                
+                .enlaces {
+                    margin-top: 1.2rem;
+                }
+            }
+            .compartir::before {
+                content: "";
+                border: 10px solid $very-dark-grayish-blue;
+                position: absolute;
+                transform: rotate(45deg);
+                top: 2.8rem;
+                left: 12.2rem;
+            }
+            .activo {
+                opacity: 1;
             }
         }
     }
