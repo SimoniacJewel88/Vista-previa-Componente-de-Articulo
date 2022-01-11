@@ -76,7 +76,7 @@ body {
   position: absolute;
   top: -4px;
   left: -2rem;
-  opacity: 0;
+  display: none;
 }
 .info .autor .compartir .enlaces {
   margin-left: 2.5rem;
@@ -117,7 +117,7 @@ body {
   letter-spacing: 0.2rem;
 }
 .info .autor .activo {
-  opacity: 1;
+  display: block;
 }
 .info .autor .avatar {
   width: 40px;
@@ -199,7 +199,7 @@ body {
     border-radius: 0.625rem;
     top: -5rem;
     left: 9rem;
-    opacity: 0;
+    display: none;
   }
   .info .autor .compartir .enlaces {
     margin-top: 1.2rem;
@@ -213,7 +213,7 @@ body {
     left: 12.2rem;
   }
   .info .autor .activo {
-    opacity: 1;
+    display: block;
   }
 }
 .attribution {
